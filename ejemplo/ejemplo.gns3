@@ -83,7 +83,7 @@
         "nodes": [
             {
                 "compute_id": "local",
-                "console": 5007,
+                "console": 5000,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
@@ -153,8 +153,8 @@
                 },
                 "symbol": ":/symbols/ethernet_switch.svg",
                 "width": 72,
-                "x": 599,
-                "y": -51,
+                "x": 217,
+                "y": -93,
                 "z": 0
             },
             {
@@ -178,8 +178,8 @@
                 "properties": {},
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "width": 65,
-                "x": 472,
-                "y": 104,
+                "x": 90,
+                "y": 61,
                 "z": 0
             },
             {
@@ -203,8 +203,8 @@
                 "properties": {},
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "width": 65,
-                "x": 690,
-                "y": 106,
+                "x": 308,
+                "y": 63,
                 "z": 0
             }
         ]

@@ -60,8 +60,8 @@
                 "drawing_id": "a21eeec8-c1bc-41f9-a9ba-446ae01901a6",
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"64\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.130 /25</text></svg>",
-                "x": 159,
-                "y": 113,
+                "x": 259,
+                "y": 110,
                 "z": 1
             },
             {
@@ -81,19 +81,19 @@
                 "z": 1
             },
             {
-                "drawing_id": "baba1b96-672d-4a83-a1c8-fa64e3fae7af",
+                "drawing_id": "936a6327-3ba6-4bc4-8fc2-f6575d5fbaf4",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"44\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2/25</text></svg>",
-                "x": -163,
-                "y": 127,
+                "svg": "<svg height=\"88\" width=\"344\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">ifconfig eth0 192.168.1.5 netmask 255.255.255.0 up\nroute add default gw 192.168.1.1 eth0\n\nroute del default gw 192.168.1.1 eth0\n</text></svg>",
+                "x": -154,
+                "y": 178,
                 "z": 1
             },
             {
-                "drawing_id": "936a6327-3ba6-4bc4-8fc2-f6575d5fbaf4",
+                "drawing_id": "b722de70-6876-478c-8ab6-ee70bea7dd8d",
                 "rotation": 0,
-                "svg": "<svg height=\"88\" width=\"306\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">ifconfig eth0 192.168.1.5 netmask 255.255.255.0 up\nroute add default gw 192.168.1.1 eth0\n\nroute del default gw 192.168.1.1 eth0\n</text></svg>",
-                "x": -103,
-                "y": 185,
+                "svg": "<svg height=\"24\" width=\"48\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2 /25</text></svg>",
+                "x": -137,
+                "y": 113,
                 "z": 1
             }
         ],
@@ -162,7 +162,7 @@
             },
             {
                 "filters": {},
-                "link_id": "98b84581-2da4-47a8-9f90-6eb10f722447",
+                "link_id": "b1335885-20a1-4373-b365-2b2e2d29b754",
                 "nodes": [
                     {
                         "adapter_number": 0,
@@ -170,8 +170,39 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e1",
-                            "x": 36,
-                            "y": 55
+                            "x": 23,
+                            "y": 54
+                        },
+                        "node_id": "d6be2d0e-3af3-4f25-b6bb-6758b53c758e",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": 44,
+                            "y": -8
+                        },
+                        "node_id": "60e562be-2734-499d-8c2d-35a4c470a929",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "11ddf4f0-05cc-44d3-bf6a-2c9978dd37cd",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e1",
+                            "x": 23,
+                            "y": 54
                         },
                         "node_id": "b8792476-594b-49c1-a50e-93ac60784959",
                         "port_number": 1
@@ -182,42 +213,11 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": 31,
-                            "y": -10
+                            "x": 44,
+                            "y": -8
                         },
-                        "node_id": "7a8f20a9-d87b-4d44-bd76-10d0841997f8",
+                        "node_id": "b0a7e54d-aa50-4234-8c34-5e0f7d743464",
                         "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "53d11526-0c77-4764-b7d3-65404cc30358",
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 53,
-                            "y": -4
-                        },
-                        "node_id": "245aaab5-1f9c-4231-9d7d-9291ad10715f",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e1",
-                            "x": 14,
-                            "y": 49
-                        },
-                        "node_id": "d6be2d0e-3af3-4f25-b6bb-6758b53c758e",
-                        "port_number": 1
                     }
                 ],
                 "suspend": false
@@ -280,7 +280,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5002,
+                "console": 5000,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
@@ -356,7 +356,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5004,
+                "console": 5001,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
@@ -432,53 +432,19 @@
             },
             {
                 "compute_id": "local",
-                "console": 5000,
+                "console": 5002,
                 "console_type": "telnet",
                 "first_port_name": "",
                 "height": 59,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "TinyCoreLinuxx64-1",
-                    "x": -34,
+                    "text": "MinimalLinux-1",
+                    "x": -18,
                     "y": -25
                 },
-                "name": "TinyCoreLinuxx64-1",
-                "node_id": "7a8f20a9-d87b-4d44-bd76-10d0841997f8",
-                "node_type": "virtualbox",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "acpi_shutdown": false,
-                    "adapter_type": "PCNet-FAST III (Am79C973)",
-                    "adapters": 1,
-                    "headless": false,
-                    "linked_clone": false,
-                    "ram": 4024,
-                    "use_any_adapter": false,
-                    "vmname": "Tiny Core Linux x64"
-                },
-                "symbol": ":/symbols/vbox_guest.svg",
-                "width": 65,
-                "x": 255,
-                "y": 78,
-                "z": 0
-            },
-            {
-                "compute_id": "local",
-                "console": 5001,
-                "console_type": "telnet",
-                "first_port_name": "",
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "BhodiLinuxx64-1",
-                    "x": -24,
-                    "y": -25
-                },
-                "name": "BhodiLinuxx64-1",
-                "node_id": "245aaab5-1f9c-4231-9d7d-9291ad10715f",
+                "name": "MinimalLinux-1",
+                "node_id": "60e562be-2734-499d-8c2d-35a4c470a929",
                 "node_type": "virtualbox",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -488,14 +454,48 @@
                     "adapters": 1,
                     "headless": false,
                     "linked_clone": false,
-                    "ram": 4024,
+                    "ram": 4012,
                     "use_any_adapter": false,
-                    "vmname": "Bhodi Linux x64"
+                    "vmname": "Minimal Linux"
                 },
                 "symbol": ":/symbols/vbox_guest.svg",
                 "width": 65,
-                "x": -242,
-                "y": 93,
+                "x": -209,
+                "y": 101,
+                "z": 0
+            },
+            {
+                "compute_id": "local",
+                "console": 5003,
+                "console_type": "telnet",
+                "first_port_name": "",
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "TinyCoreLinux-1",
+                    "x": -23,
+                    "y": -25
+                },
+                "name": "TinyCoreLinux-1",
+                "node_id": "b0a7e54d-aa50-4234-8c34-5e0f7d743464",
+                "node_type": "virtualbox",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "headless": false,
+                    "linked_clone": false,
+                    "ram": 4512,
+                    "use_any_adapter": false,
+                    "vmname": "Tiny Core Linux"
+                },
+                "symbol": ":/symbols/vbox_guest.svg",
+                "width": 65,
+                "x": 183,
+                "y": 94,
                 "z": 0
             }
         ]

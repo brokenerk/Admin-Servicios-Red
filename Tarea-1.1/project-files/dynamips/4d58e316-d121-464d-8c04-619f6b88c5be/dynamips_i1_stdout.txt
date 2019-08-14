@@ -4,3 +4,5 @@ cygwin warning:
   CYGWIN environment variable option "nodosfilewarning" turns off this warning.
   Consult the user's guide for more details about POSIX paths:
     http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!

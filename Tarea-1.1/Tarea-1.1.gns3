@@ -162,38 +162,38 @@
             },
             {
                 "filters": {},
-                "link_id": "b1335885-20a1-4373-b365-2b2e2d29b754",
+                "link_id": "0d236e49-569e-4495-9a1d-9ee1b3ec55e4",
                 "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e1",
-                            "x": 23,
-                            "y": 54
-                        },
-                        "node_id": "d6be2d0e-3af3-4f25-b6bb-6758b53c758e",
-                        "port_number": 1
-                    },
                     {
                         "adapter_number": 0,
                         "label": {
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": 44,
+                            "x": 43,
                             "y": -8
                         },
-                        "node_id": "60e562be-2734-499d-8c2d-35a4c470a929",
+                        "node_id": "e520ae8c-1f45-4a3b-bde8-1438c9e2bc8c",
                         "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e1",
+                            "x": 24,
+                            "y": 54
+                        },
+                        "node_id": "d6be2d0e-3af3-4f25-b6bb-6758b53c758e",
+                        "port_number": 1
                     }
                 ],
                 "suspend": false
             },
             {
                 "filters": {},
-                "link_id": "11ddf4f0-05cc-44d3-bf6a-2c9978dd37cd",
+                "link_id": "7374df3d-43d2-4ab1-882b-f50105af476a",
                 "nodes": [
                     {
                         "adapter_number": 0,
@@ -201,7 +201,7 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e1",
-                            "x": 23,
+                            "x": 47,
                             "y": 54
                         },
                         "node_id": "b8792476-594b-49c1-a50e-93ac60784959",
@@ -213,10 +213,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": 44,
+                            "x": 20,
                             "y": -8
                         },
-                        "node_id": "b0a7e54d-aa50-4234-8c34-5e0f7d743464",
+                        "node_id": "0a3b843f-e6ec-49eb-9955-cb3a72938ee9",
                         "port_number": 0
                     }
                 ],
@@ -439,12 +439,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "MinimalLinux-1",
-                    "x": -18,
+                    "text": "TinyCoreLinux-1",
+                    "x": -23,
                     "y": -25
                 },
-                "name": "MinimalLinux-1",
-                "node_id": "60e562be-2734-499d-8c2d-35a4c470a929",
+                "name": "TinyCoreLinux-1",
+                "node_id": "e520ae8c-1f45-4a3b-bde8-1438c9e2bc8c",
                 "node_type": "virtualbox",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -454,14 +454,14 @@
                     "adapters": 1,
                     "headless": false,
                     "linked_clone": false,
-                    "ram": 4012,
+                    "ram": 150,
                     "use_any_adapter": false,
-                    "vmname": "Minimal Linux"
+                    "vmname": "Tiny Core Linux"
                 },
                 "symbol": ":/symbols/vbox_guest.svg",
                 "width": 65,
-                "x": -209,
-                "y": 101,
+                "x": -211,
+                "y": 115,
                 "z": 0
             },
             {
@@ -473,12 +473,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "TinyCoreLinux-1",
-                    "x": -23,
+                    "text": "MinimalLinux-1",
+                    "x": -18,
                     "y": -25
                 },
-                "name": "TinyCoreLinux-1",
-                "node_id": "b0a7e54d-aa50-4234-8c34-5e0f7d743464",
+                "name": "MinimalLinux-1",
+                "node_id": "0a3b843f-e6ec-49eb-9955-cb3a72938ee9",
                 "node_type": "virtualbox",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -488,14 +488,14 @@
                     "adapters": 1,
                     "headless": false,
                     "linked_clone": false,
-                    "ram": 4512,
+                    "ram": 150,
                     "use_any_adapter": false,
-                    "vmname": "Tiny Core Linux"
+                    "vmname": "Minimal Linux"
                 },
                 "symbol": ":/symbols/vbox_guest.svg",
                 "width": 65,
-                "x": 183,
-                "y": 94,
+                "x": 139,
+                "y": 105,
                 "z": 0
             }
         ]

@@ -1,0 +1,11 @@
+Moodle: 148.204.57.162
+Pass: 4CM1
+
+ip <dir_ip> mascara gateway
+Desactivar automatically delete NvRAM and disk file
+
+RouterB
+#sh ip int bri
+#sh ip route
+(config)#router rip
+(config_router)#version 2

@@ -299,7 +299,7 @@
             {
                 "drawing_id": "128ab9a3-9770-483e-9a59-da73341a2f99",
                 "rotation": 0,
-                "svg": "<svg height=\"56\" width=\"45\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">fa0/0\n.6/30\n</text></svg>",
+                "svg": "<svg height=\"56\" width=\"45\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">fa0/1\n.6/30\n</text></svg>",
                 "x": 798,
                 "y": 282,
                 "z": 1
@@ -323,7 +323,7 @@
             {
                 "drawing_id": "29ddb98a-d47a-4dda-965e-efee39d6b62f",
                 "rotation": 0,
-                "svg": "<svg height=\"40\" width=\"45\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">fa0/0\n.1/30</text></svg>",
+                "svg": "<svg height=\"40\" width=\"45\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">fa0/0\n.1/24</text></svg>",
                 "x": 911,
                 "y": 200,
                 "z": 1
@@ -331,7 +331,7 @@
             {
                 "drawing_id": "e513f394-4343-4690-b204-628851232f22",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"44\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2/30</text></svg>",
+                "svg": "<svg height=\"24\" width=\"44\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2/24</text></svg>",
                 "x": 777,
                 "y": -395,
                 "z": 1

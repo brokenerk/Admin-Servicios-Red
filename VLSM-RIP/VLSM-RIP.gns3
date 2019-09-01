@@ -1527,11 +1527,11 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "PC-5",
-                    "x": 13,
+                    "text": "ServidorDNS",
+                    "x": -11,
                     "y": -25
                 },
-                "name": "PC-5",
+                "name": "ServidorDNS",
                 "node_id": "b7681e47-8783-4597-924d-013ca86ce7e5",
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
@@ -1552,11 +1552,11 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "PC-6",
-                    "x": 13,
+                    "text": "Servidorweb",
+                    "x": -12,
                     "y": -25
                 },
-                "name": "PC-6",
+                "name": "Servidorweb",
                 "node_id": "761b11f4-8db2-473f-a14e-c873b1858b3a",
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",

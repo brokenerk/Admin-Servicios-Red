@@ -1,0 +1,33 @@
+turnkeylinux
+
+- LAMP
+- Observium
+
+120.120.20.128/29
+
+- Network
+- Static IP config
+
+Switch:
+vlan database
+vlan 20 name Usuarios
+apply
+sh vlan-switch
+conf t
+int fa0/0
+switchport access vlan 20
+int fa0/15
+switchport mode trunk
+
+conf t
+int vlan 20
+ip add
+
+Router:
+conf t
+int fa0/0
+no sh
+int fa0/0.20
+encapsulation dot1Q 20
+encapsulation ?
+ip add

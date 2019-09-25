@@ -1,0 +1,18 @@
+% No memory map for code execution at 0xdfb10088dfb20000
+% Unable to create instruction block for vaddr=0xdfb10088dfb20000
+insn_page_compile: unable to create JIT block.
+VM 'SW3': unable to compile block for CPU0 PC=0xdfb10088dfb20090
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+% No memory map for code execution at 0xdfb10088dfb20000
+% Unable to create instruction block for vaddr=0xdfb10088dfb20000
+insn_page_compile: unable to create JIT block.
+VM 'SW3': unable to compile block for CPU0 PC=0xdfb10088dfb20090
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+% No memory map for code execution at 0xdfb10088dfb20000
+% Unable to create instruction block for vaddr=0xdfb10088dfb20000
+insn_page_compile: unable to create JIT block.
+VM 'SW3': unable to compile block for CPU0 PC=0xdfb10088dfb20090

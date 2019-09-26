@@ -1,0 +1,60 @@
+Sep 26 12:32:51.840 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Sep 26 12:32:51.840 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56769.
+Sep 26 12:32:51.848 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 26 12:32:51.849 HYPERVISOR: exec_cmd: hypervisor working_dir /home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips 
+Sep 26 12:32:51.850 GENERAL: working_dir=/home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips
+Sep 26 12:32:51.851 HYPERVISOR: exec_cmd: hypervisor working_dir /home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips/112c2b27-e609-4a28-a447-5918b89b5675 
+Sep 26 12:32:51.851 GENERAL: working_dir=/home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips/112c2b27-e609-4a28-a447-5918b89b5675
+Sep 26 12:32:51.853 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Sep 26 12:32:51.854 VM: VM R3 created.
+Sep 26 12:32:51.855 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5009 
+Sep 26 12:32:51.856 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Sep 26 12:32:51.857 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:51.858 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Sep 26 12:32:51.860 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Sep 26 12:32:51.862 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:51.863 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x608927c0 
+Sep 26 12:32:51.866 HYPERVISOR: exec_cmd: vm set_ios R3 /home/enrike/GNS3/images/IOS/c7200-a3jk9s-mz.124-25g.image 
+Sep 26 12:32:51.867 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca03.3b60.0000 
+Sep 26 12:32:51.869 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Sep 26 12:32:51.871 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Sep 26 12:32:51.872 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:51.873 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Sep 26 12:32:51.875 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:51.876 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Sep 26 12:32:51.878 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:51.879 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Sep 26 12:32:51.880 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:51.881 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-2FE-TX 
+Sep 26 12:32:51.883 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:51.884 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 PA-2FE-TX 
+Sep 26 12:32:51.886 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:51.887 HYPERVISOR: exec_cmd: vm slot_add_binding R3 4 0 PA-2FE-TX 
+Sep 26 12:32:54.843 HYPERVISOR: exec_cmd: nio create_udp udp-6fedc5d7-9b51-4129-aa6f-d47e6e9f4728 10004 127.0.0.1 10005 
+Sep 26 12:32:55.112 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 2 0 udp-6fedc5d7-9b51-4129-aa6f-d47e6e9f4728 
+Sep 26 12:32:55.114 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:55.524 HYPERVISOR: exec_cmd: nio create_udp udp-8dcf59f8-4d67-4bdc-be11-44b339bc099b 10010 127.0.0.1 10011 
+Sep 26 12:32:55.532 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 3 0 udp-8dcf59f8-4d67-4bdc-be11-44b339bc099b 
+Sep 26 12:32:55.534 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:56.922 HYPERVISOR: exec_cmd: nio create_udp udp-c282a8ca-da18-4a23-b43b-bbe39a4fbf15 10026 127.0.0.1 10027 
+Sep 26 12:32:56.930 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-c282a8ca-da18-4a23-b43b-bbe39a4fbf15 
+Sep 26 12:32:56.931 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:32:57.324 HYPERVISOR: exec_cmd: nio create_udp udp-f81bb247-5c7d-4f44-bb1e-fd7c04e21289 10032 127.0.0.1 10033 
+Sep 26 12:32:57.332 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-f81bb247-5c7d-4f44-bb1e-fd7c04e21289 
+Sep 26 12:32:57.334 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:33:24.724 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Sep 26 12:33:24.729 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips/c7200-a3jk9s-mz.124-25g.image-512.ghost 
+Sep 26 12:33:24.732 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 12:33:24.738 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Sep 26 12:33:24.740 HYPERVISOR: exec_cmd: vm start R3 
+Sep 26 13:30:49.708 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 13:30:49.711 HYPERVISOR: exec_cmd: vm stop R3 
+Sep 26 13:30:49.927 VM: VM R3 shutdown.
+Sep 26 13:30:49.936 HYPERVISOR: exec_cmd: vm extract_config R3 
+Sep 26 13:30:50.494 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 13:30:50.494 HYPERVISOR: exec_cmd: vm extract_config R3 
+Sep 26 13:30:50.494 HYPERVISOR: exec_cmd: vm delete R3 
+Sep 26 13:30:50.494 VM: VM R3 destroyed.
+Sep 26 13:30:50.494 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 26 13:30:50.918 HYPERVISOR: Stopped.
+Sep 26 13:30:50.918 GENERAL: reset done.

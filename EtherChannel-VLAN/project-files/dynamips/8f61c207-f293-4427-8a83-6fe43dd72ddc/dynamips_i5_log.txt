@@ -1,0 +1,75 @@
+Sep 26 12:32:51.994 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Sep 26 12:32:51.994 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50019.
+Sep 26 12:32:52.002 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 26 12:32:52.003 HYPERVISOR: exec_cmd: hypervisor working_dir /home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips 
+Sep 26 12:32:52.003 GENERAL: working_dir=/home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips
+Sep 26 12:32:52.004 HYPERVISOR: exec_cmd: hypervisor working_dir /home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips/454b3f3e-c283-4aa8-a26c-948c21b8b9e6 
+Sep 26 12:32:52.005 GENERAL: working_dir=/home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips/454b3f3e-c283-4aa8-a26c-948c21b8b9e6
+Sep 26 12:32:52.006 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Sep 26 12:32:52.006 VM: VM R2 created.
+Sep 26 12:32:52.008 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5007 
+Sep 26 12:32:52.009 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Sep 26 12:32:52.011 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:52.012 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Sep 26 12:32:52.014 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Sep 26 12:32:52.016 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:52.017 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x608927c0 
+Sep 26 12:32:52.020 HYPERVISOR: exec_cmd: vm set_ios R2 /home/enrike/GNS3/images/IOS/c7200-a3jk9s-mz.124-25g.image 
+Sep 26 12:32:52.021 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.31b8.0000 
+Sep 26 12:32:52.023 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Sep 26 12:32:52.025 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Sep 26 12:32:52.026 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:52.027 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 0 0 
+Sep 26 12:32:52.029 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:52.030 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-2FE 
+Sep 26 12:32:52.032 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:52.033 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Sep 26 12:32:52.034 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:52.035 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-2FE-TX 
+Sep 26 12:32:52.037 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:52.038 HYPERVISOR: exec_cmd: vm slot_add_binding R2 3 0 PA-2FE-TX 
+Sep 26 12:32:52.040 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:52.040 HYPERVISOR: exec_cmd: vm slot_add_binding R2 4 0 PA-2FE-TX 
+Sep 26 12:32:52.042 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:52.043 HYPERVISOR: exec_cmd: vm slot_add_binding R2 5 0 PA-FE-TX 
+Sep 26 12:32:52.045 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:52.046 HYPERVISOR: exec_cmd: vm slot_add_binding R2 6 0 PA-2FE-TX 
+Sep 26 12:32:55.925 HYPERVISOR: exec_cmd: nio create_udp udp-57448458-2611-4166-bf86-2d995ac47bb7 10016 127.0.0.1 10017 
+Sep 26 12:32:56.188 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-57448458-2611-4166-bf86-2d995ac47bb7 
+Sep 26 12:32:56.190 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:56.587 HYPERVISOR: exec_cmd: nio create_udp udp-e205f411-ec8b-47e4-97eb-a770cd12a15b 10022 127.0.0.1 10023 
+Sep 26 12:32:56.595 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-e205f411-ec8b-47e4-97eb-a770cd12a15b 
+Sep 26 12:32:56.596 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:56.988 HYPERVISOR: exec_cmd: nio create_udp udp-9074fc18-0b2c-4de2-b035-3c0956f1ee93 10028 127.0.0.1 10029 
+Sep 26 12:32:56.997 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 2 0 udp-9074fc18-0b2c-4de2-b035-3c0956f1ee93 
+Sep 26 12:32:56.998 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:57.392 HYPERVISOR: exec_cmd: nio create_udp udp-e773db3a-52f6-4c04-adc4-0be5cb961b1d 10034 127.0.0.1 10035 
+Sep 26 12:32:57.399 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 3 0 udp-e773db3a-52f6-4c04-adc4-0be5cb961b1d 
+Sep 26 12:32:57.401 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:57.742 HYPERVISOR: exec_cmd: nio create_udp udp-a5f7f1c9-38ac-43b4-8f2b-b8b8abfffdfc 10038 127.0.0.1 10039 
+Sep 26 12:32:57.749 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 4 0 udp-a5f7f1c9-38ac-43b4-8f2b-b8b8abfffdfc 
+Sep 26 12:32:57.751 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:58.499 HYPERVISOR: exec_cmd: nio create_udp udp-e944c079-7929-4fd7-a3e8-3ad0b06d2489 10044 127.0.0.1 10045 
+Sep 26 12:32:58.507 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 5 0 udp-e944c079-7929-4fd7-a3e8-3ad0b06d2489 
+Sep 26 12:32:58.509 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:32:58.926 HYPERVISOR: exec_cmd: nio create_udp udp-f3063ad1-5ff5-48e8-92f9-d83c01fb6053 10050 127.0.0.1 10051 
+Sep 26 12:32:58.934 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 6 0 udp-f3063ad1-5ff5-48e8-92f9-d83c01fb6053 
+Sep 26 12:32:58.936 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:33:24.734 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Sep 26 12:33:24.739 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips/c7200-a3jk9s-mz.124-25g.image-512.ghost 
+Sep 26 12:33:24.743 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 12:33:24.748 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Sep 26 12:33:24.749 HYPERVISOR: exec_cmd: vm start R2 
+Sep 26 13:02:56.372 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 13:02:56.391 HYPERVISOR: exec_cmd: vm stop R2 
+Sep 26 13:02:56.663 VM: VM R2 shutdown.
+Sep 26 13:02:56.667 HYPERVISOR: exec_cmd: vm extract_config R2 
+Sep 26 13:30:49.755 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 13:30:49.757 HYPERVISOR: exec_cmd: vm extract_config R2 
+Sep 26 13:30:50.714 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 26 13:30:50.718 HYPERVISOR: exec_cmd: vm extract_config R2 
+Sep 26 13:30:50.725 HYPERVISOR: exec_cmd: vm delete R2 
+Sep 26 13:30:50.726 VM: VM R2 destroyed.
+Sep 26 13:30:50.733 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 26 13:30:51.146 HYPERVISOR: Stopped.
+Sep 26 13:30:51.147 GENERAL: reset done.

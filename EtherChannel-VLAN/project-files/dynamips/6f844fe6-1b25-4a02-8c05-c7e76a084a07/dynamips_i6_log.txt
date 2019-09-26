@@ -1,0 +1,76 @@
+Sep 26 12:32:52.158 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Sep 26 12:32:52.158 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48751.
+Sep 26 12:32:52.166 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 26 12:32:52.168 HYPERVISOR: exec_cmd: hypervisor working_dir /home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips 
+Sep 26 12:32:52.168 GENERAL: working_dir=/home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips
+Sep 26 12:32:52.170 HYPERVISOR: exec_cmd: hypervisor working_dir /home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips/5bc2f820-a249-4179-b01f-2766571ebec7 
+Sep 26 12:32:52.170 GENERAL: working_dir=/home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips/5bc2f820-a249-4179-b01f-2766571ebec7
+Sep 26 12:32:52.171 HYPERVISOR: exec_cmd: vm create SW3 4 c3600 
+Sep 26 12:32:52.171 VM: VM SW3 created.
+Sep 26 12:32:52.173 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW3 5020 
+Sep 26 12:32:52.174 HYPERVISOR: exec_cmd: c3600 get_mac_addr SW3 
+Sep 26 12:32:52.176 HYPERVISOR: exec_cmd: vm set_disk0 SW3 1 
+Sep 26 12:32:52.178 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:32:52.179 HYPERVISOR: exec_cmd: vm set_idle_pc SW3 0x6050b114 
+Sep 26 12:32:52.182 HYPERVISOR: exec_cmd: vm set_ios SW3 /home/enrike/GNS3/images/IOS/c3640-a3js-mz.124-25d.image 
+Sep 26 12:32:52.184 HYPERVISOR: exec_cmd: c3600 set_mac_addr SW3 cc04.0484.0000 
+Sep 26 12:32:52.185 HYPERVISOR: exec_cmd: vm set_nvram SW3 256 
+Sep 26 12:32:52.187 HYPERVISOR: exec_cmd: vm set_ram SW3 192 
+Sep 26 12:32:52.189 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:32:52.190 HYPERVISOR: exec_cmd: vm slot_add_binding SW3 0 0 NM-16ESW 
+Sep 26 12:32:52.191 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:32:52.193 HYPERVISOR: exec_cmd: vm slot_add_binding SW3 1 0 NM-1FE-TX 
+Sep 26 12:32:52.194 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:32:52.195 HYPERVISOR: exec_cmd: vm slot_add_binding SW3 2 0 NM-1FE-TX 
+Sep 26 12:32:52.197 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:32:52.198 HYPERVISOR: exec_cmd: vm slot_add_binding SW3 3 0 NM-1FE-TX 
+Sep 26 12:32:57.808 HYPERVISOR: exec_cmd: nio create_udp udp-45ae7ba7-a07a-43ca-a656-6c82387a71d2 10040 127.0.0.1 10041 
+Sep 26 12:32:58.071 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3 0 4 udp-45ae7ba7-a07a-43ca-a656-6c82387a71d2 
+Sep 26 12:32:58.073 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:32:58.570 HYPERVISOR: exec_cmd: nio create_udp udp-fe063661-3281-45a4-9505-fafc3a1d6443 10046 127.0.0.1 10047 
+Sep 26 12:32:58.578 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3 0 5 udp-fe063661-3281-45a4-9505-fafc3a1d6443 
+Sep 26 12:32:58.580 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:32:59.001 HYPERVISOR: exec_cmd: nio create_udp udp-42b6df36-e8e7-40e2-9080-4d3f5798c73b 10052 127.0.0.1 10053 
+Sep 26 12:32:59.019 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3 0 6 udp-42b6df36-e8e7-40e2-9080-4d3f5798c73b 
+Sep 26 12:32:59.020 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:32:59.357 HYPERVISOR: exec_cmd: nio create_udp udp-3c23d17d-048c-4d01-b243-543df7012d45 10056 127.0.0.1 10057 
+Sep 26 12:32:59.366 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3 0 1 udp-3c23d17d-048c-4d01-b243-543df7012d45 
+Sep 26 12:32:59.368 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:32:59.778 HYPERVISOR: exec_cmd: nio create_udp udp-2673d222-8339-40db-a60c-1607fddb9c92 10060 127.0.0.1 10061 
+Sep 26 12:32:59.787 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3 0 2 udp-2673d222-8339-40db-a60c-1607fddb9c92 
+Sep 26 12:32:59.788 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:33:00.189 HYPERVISOR: exec_cmd: nio create_udp udp-5b6d7511-eaca-4ee5-9662-1c7fd7e685f2 10064 127.0.0.1 10065 
+Sep 26 12:33:00.197 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW3 0 0 udp-5b6d7511-eaca-4ee5-9662-1c7fd7e685f2 
+Sep 26 12:33:00.199 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:33:25.030 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Sep 26 12:33:25.031 VM: VM Ghost created.
+Sep 26 12:33:25.047 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/enrike/GNS3/images/IOS/c3640-a3js-mz.124-25d.image 
+Sep 26 12:33:25.057 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 26 12:33:25.063 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips/c3640-a3js-mz.124-25d.image-192.ghost 
+Sep 26 12:33:25.118 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Sep 26 12:33:25.122 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 26 12:33:25.209 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Sep 26 12:33:25.212 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 26 12:33:26.440 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 26 12:33:26.445 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 26 12:33:27.369 VM: VM Ghost shutdown.
+Sep 26 12:33:27.373 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Sep 26 12:33:27.381 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 26 12:33:27.381 VM: VM Ghost destroyed.
+Sep 26 12:33:27.411 HYPERVISOR: exec_cmd: vm set_ghost_status SW3 2 
+Sep 26 12:33:27.414 HYPERVISOR: exec_cmd: vm set_ghost_file SW3 /home/enrike/Desktop/Admin-Servicios-Red/EtherChannel-VLAN/project-files/dynamips/c3640-a3js-mz.124-25d.image-192.ghost 
+Sep 26 12:33:27.418 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 12:33:27.426 HYPERVISOR: exec_cmd: vm set_config SW3 configs/i4_startup-config.cfg 
+Sep 26 12:33:27.431 HYPERVISOR: exec_cmd: vm start SW3 
+Sep 26 13:04:57.898 HYPERVISOR: exec_cmd: vm extract_config SW3 
+Sep 26 13:30:49.790 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 13:30:49.791 HYPERVISOR: exec_cmd: vm stop SW3 
+Sep 26 13:30:50.028 VM: VM SW3 shutdown.
+Sep 26 13:30:50.030 HYPERVISOR: exec_cmd: vm extract_config SW3 
+Sep 26 13:30:50.485 HYPERVISOR: exec_cmd: vm get_status SW3 
+Sep 26 13:30:50.486 HYPERVISOR: exec_cmd: vm extract_config SW3 
+Sep 26 13:30:50.491 HYPERVISOR: exec_cmd: vm delete SW3 
+Sep 26 13:30:50.491 VM: VM SW3 destroyed.
+Sep 26 13:30:50.493 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 26 13:30:50.858 HYPERVISOR: Stopped.
+Sep 26 13:30:50.858 GENERAL: reset done.

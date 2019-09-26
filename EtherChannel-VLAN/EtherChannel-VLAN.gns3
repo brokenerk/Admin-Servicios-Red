@@ -359,6 +359,14 @@
                 "x": -213,
                 "y": 66,
                 "z": 1
+            },
+            {
+                "drawing_id": "a2620e9f-4d4a-4733-8d67-e6ea265674d2",
+                "rotation": 0,
+                "svg": "<svg height=\"56\" width=\"336\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">ifconfig eth0 8.8.8.19 netmask 255.255.255.240 up\nroute add default gw 8.8.8.17 eth0\nroute -n</text></svg>",
+                "x": -666,
+                "y": 417,
+                "z": 1
             }
         ],
         "links": [
@@ -705,37 +713,6 @@
             },
             {
                 "filters": {},
-                "link_id": "768a5b6b-db07-4e47-8d67-2102ac6a293c",
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f0/0",
-                            "x": 48,
-                            "y": 53
-                        },
-                        "node_id": "5bc2f820-a249-4179-b01f-2766571ebec7",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 19,
-                            "y": -8
-                        },
-                        "node_id": "194372d3-1e47-4053-adcd-05ea57545d09",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
                 "link_id": "22b7508b-3bb9-48c0-bdcb-5e7661eee299",
                 "nodes": [
                     {
@@ -953,7 +930,38 @@
             },
             {
                 "filters": {},
-                "link_id": "c6a667a8-69e9-4c7a-815a-8db04f1510e9",
+                "link_id": "12578d29-07a4-4529-beec-d78d30bd9c4f",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": 42,
+                            "y": -9
+                        },
+                        "node_id": "e87eef85-2f42-4168-b171-1eaed11c0dcd",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 25,
+                            "y": 54
+                        },
+                        "node_id": "8f61c207-f293-4427-8a83-6fe43dd72ddc",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "b03a8442-7edc-4e58-a456-225ea156bc3d",
                 "nodes": [
                     {
                         "adapter_number": 0,
@@ -961,10 +969,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f0/0",
-                            "x": 27,
-                            "y": 55
+                            "x": 45,
+                            "y": 54
                         },
-                        "node_id": "8f61c207-f293-4427-8a83-6fe43dd72ddc",
+                        "node_id": "5bc2f820-a249-4179-b01f-2766571ebec7",
                         "port_number": 0
                     },
                     {
@@ -973,10 +981,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": 40,
+                            "x": 22,
                             "y": -9
                         },
-                        "node_id": "0359251a-7872-4f18-901b-3149fd00ac10",
+                        "node_id": "fb463126-ffb4-4c50-b7e1-aae1960bb0b7",
                         "port_number": 0
                     }
                 ],
@@ -1354,31 +1362,6 @@
             },
             {
                 "compute_id": "local",
-                "console": 5011,
-                "console_type": "telnet",
-                "first_port_name": null,
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "PC-6",
-                    "x": 27,
-                    "y": -27
-                },
-                "name": "PC-6",
-                "node_id": "194372d3-1e47-4053-adcd-05ea57545d09",
-                "node_type": "vpcs",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {},
-                "symbol": ":/symbols/vpcs_guest.svg",
-                "width": 65,
-                "x": 228,
-                "y": 322,
-                "z": 0
-            },
-            {
-                "compute_id": "local",
                 "console": 5015,
                 "console_type": "telnet",
                 "first_port_name": null,
@@ -1481,27 +1464,70 @@
             },
             {
                 "compute_id": "local",
-                "console": 5019,
+                "console": 5017,
                 "console_type": "telnet",
-                "first_port_name": null,
+                "first_port_name": "",
                 "height": 59,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "PC-8",
-                    "x": 13,
-                    "y": -25
+                    "text": "TinyCoreLinux-1",
+                    "x": -25,
+                    "y": 56
                 },
-                "name": "PC-8",
-                "node_id": "0359251a-7872-4f18-901b-3149fd00ac10",
-                "node_type": "vpcs",
+                "name": "TinyCoreLinux-1",
+                "node_id": "e87eef85-2f42-4168-b171-1eaed11c0dcd",
+                "node_type": "virtualbox",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
-                "properties": {},
-                "symbol": ":/symbols/vpcs_guest.svg",
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "headless": false,
+                    "linked_clone": false,
+                    "ram": 2048,
+                    "use_any_adapter": false,
+                    "vmname": "Tiny Core Linux"
+                },
+                "symbol": ":/symbols/vbox_guest.svg",
                 "width": 65,
                 "x": -428,
-                "y": 316,
+                "y": 306,
+                "z": 0
+            },
+            {
+                "compute_id": "local",
+                "console": 5011,
+                "console_type": "telnet",
+                "first_port_name": "",
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "LAMP-1",
+                    "x": 5,
+                    "y": 57
+                },
+                "name": "LAMP-1",
+                "node_id": "fb463126-ffb4-4c50-b7e1-aae1960bb0b7",
+                "node_type": "virtualbox",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "headless": false,
+                    "linked_clone": false,
+                    "ram": 2048,
+                    "use_any_adapter": false,
+                    "vmname": "LAMP"
+                },
+                "symbol": ":/symbols/vbox_guest.svg",
+                "width": 65,
+                "x": 222,
+                "y": 305,
                 "z": 0
             }
         ]

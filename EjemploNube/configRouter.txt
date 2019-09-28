@@ -1,0 +1,19 @@
+conf t
+int fa0/0
+ip add 192.168.0.1 255.255.255.0
+ip nat inside
+no sh
+
+int fa0/1
+ip add dhcp [Aleatoria, segun red conectada al cable ethernet de acceso de Internet]
+ip nat outside 
+no sh
+
+ip domain-lookup
+access-list 1 permit 192.168.0.0 0.0.0.255
+ip nat inside source static 192.168.0.2 [10.0.0.10]
+ip nat inside source list 1 int fa0/1 overload
+ip route 0.0.0.0 0.0.0.0 10.0.0.1
+
+Para IP DNS PC: Revisar en terminal con ifconfig /all
+Para IP NAT: Aleatoria, que pertenezca a la IP DHCP

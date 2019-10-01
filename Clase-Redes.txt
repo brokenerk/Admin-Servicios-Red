@@ -1,0 +1,26 @@
+--- Telnet
+line vty 0 15
+pass 1234
+exit
+
+telnet 10.10.0.1 
+
+--- SSH y Dominios
+show ssh
+ip domain-name curso4CM1.com
+crypto key generate rsa 1024
+crypto key generate rsa general-keys
+ip ssh time-out 30
+ip ssh authentification-retries 6
+ip ssh version 2
+username admin privilege 15 pass 1234
+
+line vty 0 4
+transport input ssh
+login local
+ssh -v 2 -l admin 10.10.0.1
+
+-Privilegios
+privilege line 
+
+---

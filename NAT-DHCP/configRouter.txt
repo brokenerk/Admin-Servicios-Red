@@ -1,0 +1,33 @@
+**** Excluir la ip del default gateway y la ip del LAMP ****
+ip dhcp excluded-address [DEFA-GW]
+ip dhcp excluded-address [IP-LAMP]
+
+ip dhcp pool HostDinamico
+network [SUBRED INTEGRANTE] [MASK-SUBRED]
+default-router [DEFA-GW]
+dns-server [DIRECCION-DNS]  <--- Esta se consulta en una terminal con: ipconfig /all, en la parte de servidor DNS
+
+**** LAN ****
+int fa0/0
+ip address [IP-LAMP] 255.255.255.0  <-- Dejar esta mascara
+ip nat inside
+
+*** Conectada a la Cloud. Conectar por Ethernet ****
+in fa0/1
+ip address dhcp
+ip nat outside
+
+**** Una vez que se asigna la IP por DHCP en fa0/1, hay que poner un rango: ****
+**** Por ejemplo: Si automaticamente se asigno la 10.0.0.8, 				****
+**** entonces el rango que debe ponerse es: 10.0.0.9 - 10.0.0.19			****
+RANGO IPS DHCP = 10.0.0.9 - 10.0.0.19
+
+ip nat pool NAT-POOL1 [RANGO IPS DHCP] netmask [MASK-IPCONFIG] <-- La mascara es la que indique el ipconfig /all en cmd
+																   Es la mascara de la ip asignada por DHCP desde Cloud
+
+access-list 1 permit [SUBRED INTEGRANTE] [WILDCARD-SUBRED]   	<-- TinyCore
+access-list 2 permit [IP-LAMP] [WILDCARD-LAMP] 					<-- LAMP
+
+**** Le damos acceso a Internet a las VMs ****
+ip nat inside source list 1 pool NAT-POOL1
+ip nat inside source list 2 pool NAT-POOL1

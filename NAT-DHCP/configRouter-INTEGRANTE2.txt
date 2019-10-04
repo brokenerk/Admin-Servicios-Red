@@ -1,19 +1,19 @@
-ip dhcp excluded-address 192.168.0.1 192.168.0.2
+ip dhcp excluded-address 192.168.10.1 192.168.10.2
 
 ip dhcp pool HostDinamico
-   network 192.168.0.0 255.255.255.0
-   default-router 192.168.0.1 
+   network 192.168.10.0 255.255.255.0
+   default-router 192.168.10.1 
    dns-server 10.2.9.84 
 
 interface FastEthernet0/0
- ip address 192.168.0.1 255.255.255.0
+ ip address 192.168.10.1 255.255.255.0
  ip nat inside
 
 interface FastEthernet0/1
  ip address dhcp
  ip nat outside
 
-access-list 1 permit 192.168.0.0 0.0.0.255
+access-list 1 permit 192.168.10.0 0.0.0.255
 
 ip nat pool NAT-POOL1 10.0.0.9 10.0.0.20 netmask 255.255.255.0
 ip nat inside source list 1 pool NAT-POOL1

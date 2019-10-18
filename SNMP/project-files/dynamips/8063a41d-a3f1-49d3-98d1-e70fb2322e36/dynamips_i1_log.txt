@@ -1,0 +1,89 @@
+Oct 17 21:24:34.726 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 17 21:24:34.727 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55287.
+Oct 17 21:24:34.799 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 17 21:24:34.800 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\YaKerTaker\Google Drive\7mo\Admin-Servicios-Red\SNMP\project-files\dynamips 
+Oct 17 21:24:34.831 GENERAL: working_dir=C:\Users\YaKerTaker\Google Drive\7mo\Admin-Servicios-Red\SNMP\project-files\dynamips
+Oct 17 21:24:34.831 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\YaKerTaker\Google Drive\7mo\Admin-Servicios-Red\SNMP\project-files\dynamips\f277cc49-1f1b-41ad-b18b-2cdb437ccd40 
+Oct 17 21:24:34.831 GENERAL: working_dir=C:\Users\YaKerTaker\Google Drive\7mo\Admin-Servicios-Red\SNMP\project-files\dynamips\f277cc49-1f1b-41ad-b18b-2cdb437ccd40
+Oct 17 21:24:34.832 HYPERVISOR: exec_cmd: vm create SW1 3 c3600 
+Oct 17 21:24:34.834 VM: VM SW1 created.
+Oct 17 21:24:34.835 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW1 5002 
+Oct 17 21:24:34.835 HYPERVISOR: exec_cmd: c3600 get_mac_addr SW1 
+Oct 17 21:24:34.835 HYPERVISOR: exec_cmd: vm set_disk0 SW1 1 
+Oct 17 21:24:34.836 HYPERVISOR: exec_cmd: vm set_exec_area SW1 64 
+Oct 17 21:24:34.836 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:24:34.836 HYPERVISOR: exec_cmd: vm set_idle_pc SW1 0x6050b114 
+Oct 17 21:24:34.837 HYPERVISOR: exec_cmd: vm set_ios SW1 C:/Users/YaKerTaker/GNS3/images/IOS/c3640-a3js-mz.124-25d.image 
+Oct 17 21:24:34.838 HYPERVISOR: exec_cmd: c3600 set_mac_addr SW1 cc03.12bc.0000 
+Oct 17 21:24:34.838 HYPERVISOR: exec_cmd: vm set_nvram SW1 256 
+Oct 17 21:24:34.838 HYPERVISOR: exec_cmd: vm set_ram SW1 192 
+Oct 17 21:24:34.839 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:24:34.839 HYPERVISOR: exec_cmd: vm slot_add_binding SW1 0 0 NM-1FE-TX 
+Oct 17 21:24:34.839 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:24:34.840 HYPERVISOR: exec_cmd: vm slot_add_binding SW1 1 0 NM-1FE-TX 
+Oct 17 21:24:34.840 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:24:34.840 HYPERVISOR: exec_cmd: vm slot_add_binding SW1 2 0 NM-1FE-TX 
+Oct 17 21:24:34.840 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:24:34.841 HYPERVISOR: exec_cmd: vm slot_add_binding SW1 3 0 NM-16ESW 
+Oct 17 21:24:36.138 HYPERVISOR: exec_cmd: nio create_udp udp-4088f6f5-37cf-4e52-83f8-7b996fe2153d 10002 127.0.0.1 10003 
+Oct 17 21:24:37.139 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW1 0 0 udp-4088f6f5-37cf-4e52-83f8-7b996fe2153d 
+Oct 17 21:24:37.140 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:24:37.888 HYPERVISOR: exec_cmd: nio create_udp udp-987d7f8c-937e-4d4d-b4a2-4942a4ca3489 10014 127.0.0.1 10015 
+Oct 17 21:24:37.914 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW1 1 0 udp-987d7f8c-937e-4d4d-b4a2-4942a4ca3489 
+Oct 17 21:24:37.914 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:25:31.112 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Oct 17 21:25:31.113 VM: VM Ghost created.
+Oct 17 21:25:31.114 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/YaKerTaker/GNS3/images/IOS/c3640-a3js-mz.124-25d.image 
+Oct 17 21:25:31.114 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 17 21:25:31.115 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\YaKerTaker\Google Drive\7mo\Admin-Servicios-Red\SNMP\project-files\dynamips\c3640-a3js-mz.124-25d.image-192.ghost' 
+Oct 17 21:25:31.115 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:25:31.116 HYPERVISOR: exec_cmd: vm set_config SW1 configs\i3_startup-config.cfg 
+Oct 17 21:25:31.116 HYPERVISOR: exec_cmd: vm start SW1 
+Oct 17 21:26:49.622 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Oct 17 21:26:49.660 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:29:01.414 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:29:01.414 HYPERVISOR: exec_cmd: vm stop SW1 
+Oct 17 21:29:01.554 VM: VM SW1 shutdown.
+Oct 17 21:29:01.556 HYPERVISOR: exec_cmd: vm extract_config SW1 
+Oct 17 21:29:06.876 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:29:06.877 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SW1 0 0 
+Oct 17 21:29:06.878 HYPERVISOR: exec_cmd: nio delete udp-4088f6f5-37cf-4e52-83f8-7b996fe2153d 
+Oct 17 21:29:09.659 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:29:09.659 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SW1 1 0 
+Oct 17 21:29:09.660 HYPERVISOR: exec_cmd: nio delete udp-987d7f8c-937e-4d4d-b4a2-4942a4ca3489 
+Oct 17 21:29:15.418 HYPERVISOR: exec_cmd: nio create_udp udp-19ecadf8-3108-4059-8f2b-af3cc8be9942 10002 127.0.0.1 10003 
+Oct 17 21:29:15.421 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW1 3 0 udp-19ecadf8-3108-4059-8f2b-af3cc8be9942 
+Oct 17 21:29:15.421 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:29:18.617 HYPERVISOR: exec_cmd: nio create_udp udp-e89f9e8a-10c9-496d-82b2-fa512dc3de7c 10014 127.0.0.1 10015 
+Oct 17 21:29:18.620 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW1 3 1 udp-e89f9e8a-10c9-496d-82b2-fa512dc3de7c 
+Oct 17 21:29:18.620 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:29:21.133 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:29:21.134 HYPERVISOR: exec_cmd: vm extract_config SW1 
+Oct 17 21:29:21.138 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:29:21.139 HYPERVISOR: exec_cmd: vm set_config SW1 configs\i3_startup-config.cfg 
+Oct 17 21:29:21.139 HYPERVISOR: exec_cmd: vm start SW1 
+Oct 17 21:53:21.562 HYPERVISOR: exec_cmd: vm extract_config SW1 
+Oct 17 21:53:55.635 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:53:55.635 HYPERVISOR: exec_cmd: vm slot_disable_nio SW1 3 1 
+Oct 17 21:53:55.651 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding SW1 3 1 
+Oct 17 21:53:55.652 HYPERVISOR: exec_cmd: nio delete udp-e89f9e8a-10c9-496d-82b2-fa512dc3de7c 
+Oct 17 21:54:07.996 HYPERVISOR: exec_cmd: nio create_udp udp-fdca25fe-faa0-4652-9e6f-d83392f7cd0f 10014 127.0.0.1 10015 
+Oct 17 21:54:07.999 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW1 3 1 udp-fdca25fe-faa0-4652-9e6f-d83392f7cd0f 
+Oct 17 21:54:07.999 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:54:07.999 HYPERVISOR: exec_cmd: vm slot_enable_nio SW1 3 1 
+Oct 17 21:54:10.031 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Oct 17 21:54:10.033 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:54:28.266 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:54:28.266 HYPERVISOR: exec_cmd: vm stop SW1 
+Oct 17 21:54:28.400 VM: VM SW1 shutdown.
+Oct 17 21:54:28.402 HYPERVISOR: exec_cmd: vm extract_config SW1 
+Oct 17 21:55:48.351 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Oct 17 21:55:48.352 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 21:55:48.352 HYPERVISOR: exec_cmd: vm set_config SW1 configs\i3_startup-config.cfg 
+Oct 17 21:55:48.352 HYPERVISOR: exec_cmd: vm start SW1 
+Oct 17 22:02:35.131 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 22:02:35.133 HYPERVISOR: exec_cmd: vm stop SW1 
+Oct 17 22:02:35.286 VM: VM SW1 shutdown.
+Oct 17 22:02:35.288 HYPERVISOR: exec_cmd: vm extract_config SW1 
+Oct 17 22:30:39.436 HYPERVISOR: exec_cmd: vm get_status SW1 
+Oct 17 22:30:39.437 HYPERVISOR: exec_cmd: vm extract_config SW1 

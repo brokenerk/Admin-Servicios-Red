@@ -1,0 +1,8 @@
+Router:
+snmp-server group ADMINS v3 priv
+snmp-server user admin ADMINS v auth sha 12345678 priv des56 12345678
+snmp-server host 192.168.10.10 version 3 priv admin
+
+Manjaro:
+snmpwalk -v 3 -l authPriv -u admin -a SHA -A "12345678" -x DES -X "12345678" 192.168.10.1 system
+snmpget -v 3 -l authPriv -u admin -a SHA -A "12345678" -x DES -X "12345678" 192.168.10.1 sysName.0

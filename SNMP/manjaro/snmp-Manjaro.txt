@@ -1,0 +1,37 @@
+Configurar IPv4 manualmente
+
+sudo pacman -S net-snmp
+systemctl enable snmpd.service
+mkdir /etc/snmp/
+
+nano /etc/snmp/snmpd.conf
+rocommunity ro_4CM1
+syslocation snmp_manager
+syscontact labredes_admin
+
+systemctl start snmpd
+systemctl status snmpd
+snmpwalk -v 2c -c ro_4CM1 localhost | less
+
+systemctl enable snmptrapd.service
+/etc/snmp/snmptrapd.conf
+snmpTrapdAddr 127.0.0.1 192.168.10.1
+disableAuthorization yes
+outputOption n
+authCommunity log,execute,net ro_4CM1
+authCommunity log,execute,net rw_4CM1
+
+systemctl stop snmptrapd
+systemctl start snmptrapd
+systemctl status snmptrapd
+
+snmptrap -v 2c -c ro_4CM1 127.0.0.1 '' netSnmpExampleHeartbeatNotification netSnmpExampleHeartbeatRate i 12345
+systemctl status snmptrapd
+
+
+Router:
+conf t
+snmp-server enable traps
+snmp-server host 192.168.10.10 traps version 2 ro_4CM1
+
+#debug snmp packets

@@ -128,7 +128,7 @@
             },
             {
                 "filters": {},
-                "link_id": "0f373f3d-70be-42c1-ae1c-326e38b7527b",
+                "link_id": "0d121755-ee8a-4c3d-a3d9-5da8e4cb9d28",
                 "nodes": [
                     {
                         "adapter_number": 0,
@@ -137,9 +137,9 @@
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
                             "x": 72,
-                            "y": 26
+                            "y": 28
                         },
-                        "node_id": "7ee50882-4a71-4fca-a7db-4489375edac9",
+                        "node_id": "b835594f-0399-4f80-acbc-dbf9dfae282a",
                         "port_number": 0
                     },
                     {
@@ -149,7 +149,7 @@
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e1",
                             "x": -4,
-                            "y": 18
+                            "y": 17
                         },
                         "node_id": "2022890c-4e43-4ac5-bd92-14aeda111394",
                         "port_number": 1
@@ -368,13 +368,13 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Manjarox64-1",
-                    "x": -16,
+                    "text": "WindowsXPx64-1",
+                    "x": -27,
                     "y": -25
                 },
                 "locked": false,
-                "name": "Manjarox64-1",
-                "node_id": "7ee50882-4a71-4fca-a7db-4489375edac9",
+                "name": "WindowsXPx64-1",
+                "node_id": "b835594f-0399-4f80-acbc-dbf9dfae282a",
                 "node_type": "virtualbox",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -387,13 +387,13 @@
                     "ram": 2048,
                     "usage": "",
                     "use_any_adapter": false,
-                    "vmname": "Manjaro x64"
+                    "vmname": "Windows XP x64"
                 },
                 "symbol": ":/symbols/vbox_guest.svg",
-                "template_id": "25180da8-e14c-41bc-b232-c09f81af32b8",
+                "template_id": "2ee82fc0-c417-4eb0-9cd6-cbef009bdb8d",
                 "width": 65,
-                "x": -425,
-                "y": 14,
+                "x": -428,
+                "y": 8,
                 "z": 1
             }
         ]

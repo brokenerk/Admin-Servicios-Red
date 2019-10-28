@@ -1,0 +1,23 @@
+1.- Instalar VM Windows XP
+2.- Instalar .NET Framework 2
+3.- Instalar Power SNMP Free Manager
+4.- Asignar IP manualmente en
+	Panel de Control > Conexiones de red e Internet > Conexiones de red >
+	Clic derecho Conexion de área local > Propiedades > Protocolo Internet (TCP/IP) >
+	Propiedades > Usar la siguiente direccion IP > 192.168.1.3 255.255.255.0 192.168.1.1
+5.- Desactivar firewall
+	Panel de Control > Centro de seguridad > Firewall de Windows > Desactivado
+6.- Hacer ping para verificar comunicación
+7.- Abrir PowerSNMP Free Manager
+8.- En la ventana Configuration > Local Address > 192.168.1.3
+9.- Seleccionar "No" en la ventana Discover Agents
+10.- Empezará a escuchar las traps del router
+11.- Para agregar el router como agente SNMP, clic en la pestaña Discover > SNMP Agents
+12.- En la ventana Discover SNMP Agents > Properties
+13.- En la ventana Discovery Properties
+	 Community > ro_4CM1
+	 SNMP Version > Two
+14.- De vuelta en la ventana Discover SNMP Agents > Address > 192.168.1.1 > Add
+15.- SNMP sigue escuchando traps
+
+Video tutorial: https://www.youtube.com/watch?v=LcZO5zNvomM&t=1358s

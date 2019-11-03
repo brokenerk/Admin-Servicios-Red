@@ -1,0 +1,47 @@
+Oct 28 07:20:54.427 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 28 07:20:54.432 HYPERVISOR: Started on IP = 192.168.56.1, TCP port = 50335.
+Oct 28 07:20:54.845 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 28 07:20:54.846 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips 
+Oct 28 07:20:54.847 GENERAL: working_dir=C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips
+Oct 28 07:20:54.848 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\31259a86-6a49-4cce-ad9a-b04b07a269e3 
+Oct 28 07:20:54.850 GENERAL: working_dir=C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\31259a86-6a49-4cce-ad9a-b04b07a269e3
+Oct 28 07:20:54.851 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Oct 28 07:20:54.860 VM: VM R2 created.
+Oct 28 07:20:54.862 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Oct 28 07:20:54.863 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Oct 28 07:20:54.864 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 28 07:20:54.864 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Oct 28 07:20:54.866 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Oct 28 07:20:54.867 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Oct 28 07:20:54.869 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 28 07:20:54.869 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x6406a3c8 
+Oct 28 07:20:54.871 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:20:54.873 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Oct 28 07:20:54.874 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Oct 28 07:20:55.024 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:22:01.231 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:23:51.983 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 28 07:23:51.983 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 0 0 
+Oct 28 07:23:51.984 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 28 07:23:51.985 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-2FE 
+Oct 28 07:23:51.985 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 28 07:23:51.986 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Oct 28 07:25:41.257 HYPERVISOR: exec_cmd: nio create_udp udp-497b4e98-cb4f-495c-9d31-0dfe1ed912e3 10030 127.0.0.1 10031 
+Oct 28 07:25:42.107 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-497b4e98-cb4f-495c-9d31-0dfe1ed912e3 
+Oct 28 07:25:42.108 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 28 07:25:50.033 HYPERVISOR: exec_cmd: nio create_udp udp-5aa9d792-bd71-4704-a90f-fc38ab4d2b8d 10034 127.0.0.1 10035 
+Oct 28 07:25:50.041 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-5aa9d792-bd71-4704-a90f-fc38ab4d2b8d 
+Oct 28 07:25:50.042 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 28 07:51:41.759 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 28 07:51:41.767 VM: VM Ghost created.
+Oct 28 07:51:41.770 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:51:41.771 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 28 07:51:41.772 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost' 
+Oct 28 07:51:41.773 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 28 07:51:41.775 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Oct 28 07:51:41.776 HYPERVISOR: exec_cmd: vm start R2 
+Oct 28 07:52:12.796 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 28 08:54:13.206 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 28 08:55:43.220 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 28 07:59:53.302 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 28 07:59:53.307 HYPERVISOR: exec_cmd: vm stop R2 

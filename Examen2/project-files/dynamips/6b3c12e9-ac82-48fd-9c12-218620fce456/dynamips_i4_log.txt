@@ -1,0 +1,54 @@
+Oct 28 07:20:58.350 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 28 07:20:58.360 HYPERVISOR: Started on IP = 192.168.56.1, TCP port = 50355.
+Oct 28 07:20:58.578 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 28 07:20:58.579 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips 
+Oct 28 07:20:58.580 GENERAL: working_dir=C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips
+Oct 28 07:20:58.581 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\6b3c12e9-ac82-48fd-9c12-218620fce456 
+Oct 28 07:20:58.589 GENERAL: working_dir=C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\6b3c12e9-ac82-48fd-9c12-218620fce456
+Oct 28 07:20:58.590 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Oct 28 07:20:58.607 VM: VM R4 created.
+Oct 28 07:20:58.608 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Oct 28 07:20:58.609 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Oct 28 07:20:58.610 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 28 07:20:58.610 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Oct 28 07:20:58.612 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Oct 28 07:20:58.613 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Oct 28 07:20:58.614 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 28 07:20:58.615 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x6406a3c8 
+Oct 28 07:20:58.616 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:20:58.617 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Oct 28 07:20:58.619 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Oct 28 07:20:58.811 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:21:34.905 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:21:52.182 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:22:00.024 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:22:03.532 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:23:28.485 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 28 07:23:28.486 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Oct 28 07:23:28.487 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 28 07:23:28.487 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-2FE 
+Oct 28 07:23:28.488 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 28 07:23:28.489 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-2FE-TX 
+Oct 28 07:24:01.198 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:25:36.150 HYPERVISOR: exec_cmd: nio create_udp udp-cf3432ac-5053-47b3-be3d-eae3b1f31126 10024 127.0.0.1 10025 
+Oct 28 07:25:36.997 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-cf3432ac-5053-47b3-be3d-eae3b1f31126 
+Oct 28 07:25:36.999 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 28 07:25:41.206 HYPERVISOR: exec_cmd: nio create_udp udp-6c7a44ea-f556-48d1-a8a0-f56c3515deb7 10028 127.0.0.1 10029 
+Oct 28 07:25:41.230 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-6c7a44ea-f556-48d1-a8a0-f56c3515deb7 
+Oct 28 07:25:41.230 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 28 07:25:55.509 HYPERVISOR: exec_cmd: nio create_udp udp-61e18f8d-cce6-47dc-973e-0918367386a3 10040 127.0.0.1 10041 
+Oct 28 07:25:55.519 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-61e18f8d-cce6-47dc-973e-0918367386a3 
+Oct 28 07:25:55.520 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 28 07:44:59.813 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 28 07:44:59.822 VM: VM Ghost created.
+Oct 28 07:44:59.825 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:44:59.828 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 28 07:44:59.829 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost' 
+Oct 28 07:44:59.831 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 28 07:44:59.833 HYPERVISOR: exec_cmd: vm set_config R4 configs\i4_startup-config.cfg 
+Oct 28 07:44:59.834 HYPERVISOR: exec_cmd: vm start R4 
+Oct 28 07:45:31.830 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 28 07:47:01.825 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 28 07:51:31.889 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 28 07:59:53.330 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 28 07:59:53.331 HYPERVISOR: exec_cmd: vm stop R4 

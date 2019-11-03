@@ -1,0 +1,53 @@
+Oct 28 07:20:57.029 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 28 07:20:57.041 HYPERVISOR: Started on IP = 192.168.56.1, TCP port = 50346.
+Oct 28 07:20:57.064 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 28 07:20:57.065 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips 
+Oct 28 07:20:57.067 GENERAL: working_dir=C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips
+Oct 28 07:20:57.068 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\532b0418-3af1-437f-bad1-040f8f5dc3b6 
+Oct 28 07:20:57.070 GENERAL: working_dir=C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\532b0418-3af1-437f-bad1-040f8f5dc3b6
+Oct 28 07:20:57.071 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Oct 28 07:20:57.080 VM: VM R3 created.
+Oct 28 07:20:57.081 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Oct 28 07:20:57.082 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Oct 28 07:20:57.083 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 07:20:57.084 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Oct 28 07:20:57.085 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Oct 28 07:20:57.087 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Oct 28 07:20:57.088 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 07:20:57.089 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x6406a3c8 
+Oct 28 07:20:57.091 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:20:57.093 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Oct 28 07:20:57.094 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Oct 28 07:20:57.299 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:21:37.447 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:21:52.198 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:23:12.826 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 07:23:12.827 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Oct 28 07:23:12.828 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 07:23:12.828 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Oct 28 07:23:12.829 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 07:23:12.830 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Oct 28 07:25:30.079 HYPERVISOR: exec_cmd: nio create_udp udp-81321a3a-9ac8-4df5-b3bc-324eb453c207 10018 127.0.0.1 10019 
+Oct 28 07:25:30.936 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-81321a3a-9ac8-4df5-b3bc-324eb453c207 
+Oct 28 07:25:30.939 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 07:25:50.068 HYPERVISOR: exec_cmd: nio create_udp udp-0071f7de-625c-4d14-a645-046c14fc5258 10036 127.0.0.1 10037 
+Oct 28 07:25:50.077 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-0071f7de-625c-4d14-a645-046c14fc5258 
+Oct 28 07:25:50.077 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 07:25:59.021 HYPERVISOR: exec_cmd: nio create_udp udp-7ba814b0-8d05-41c1-9603-2faf7c8f6d87 10044 127.0.0.1 10045 
+Oct 28 07:25:59.029 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-7ba814b0-8d05-41c1-9603-2faf7c8f6d87 
+Oct 28 07:25:59.030 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 07:27:51.204 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:28:00.593 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:44:45.913 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 28 07:44:45.920 VM: VM Ghost created.
+Oct 28 07:44:45.921 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:44:45.922 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 28 07:44:45.923 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost' 
+Oct 28 07:44:45.926 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 07:44:45.929 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+Oct 28 07:44:45.929 HYPERVISOR: exec_cmd: vm start R3 
+Oct 28 07:45:16.842 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 28 07:46:46.843 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 28 07:49:16.858 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 28 07:59:53.314 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 28 07:59:53.320 HYPERVISOR: exec_cmd: vm stop R3 

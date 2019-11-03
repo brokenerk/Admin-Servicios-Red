@@ -1,0 +1,36 @@
+Oct 28 07:21:00.045 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 28 07:21:00.051 HYPERVISOR: Started on IP = 192.168.56.1, TCP port = 50365.
+Oct 28 07:21:00.290 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 28 07:21:00.292 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips 
+Oct 28 07:21:00.293 GENERAL: working_dir=C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips
+Oct 28 07:21:00.294 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\eb9f403e-92e7-4a6d-8890-5855ea30f063 
+Oct 28 07:21:00.296 GENERAL: working_dir=C:\Users\shado\Desktop\7mo Semestre\Redes 3\Practicas\Examen_2\project-files\dynamips\eb9f403e-92e7-4a6d-8890-5855ea30f063
+Oct 28 07:21:00.297 HYPERVISOR: exec_cmd: vm create R5 5 c7200 
+Oct 28 07:21:00.306 VM: VM R5 created.
+Oct 28 07:21:00.308 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Oct 28 07:21:00.309 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
+Oct 28 07:21:00.309 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 28 07:21:00.310 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
+Oct 28 07:21:00.312 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Oct 28 07:21:00.313 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Oct 28 07:21:00.314 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 28 07:21:00.315 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x6406a3c8 
+Oct 28 07:21:00.317 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:21:00.318 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
+Oct 28 07:21:00.319 HYPERVISOR: exec_cmd: vm set_ram R5 512 
+Oct 28 07:21:00.518 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:21:38.711 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:21:46.949 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/shado/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Oct 28 07:22:29.605 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 28 07:22:29.606 HYPERVISOR: exec_cmd: vm slot_remove_binding R5 0 0 
+Oct 28 07:22:29.606 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 28 07:22:29.607 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-2FE 
+Oct 28 07:25:05.409 HYPERVISOR: exec_cmd: nio create_udp udp-e5cf2b12-30c4-4047-89b6-5700daf9b77e 10002 127.0.0.1 10003 
+Oct 28 07:25:06.994 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-e5cf2b12-30c4-4047-89b6-5700daf9b77e 
+Oct 28 07:25:06.995 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 28 07:25:18.789 HYPERVISOR: exec_cmd: nio create_udp udp-13ad62f8-a8f2-4715-875f-b5cfb26cf481 10006 127.0.0.1 10007 
+Oct 28 07:25:18.799 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-13ad62f8-a8f2-4715-875f-b5cfb26cf481 
+Oct 28 07:25:18.800 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 28 08:00:04.127 HYPERVISOR: Stopped.
+Oct 28 08:00:04.128 VM: VM R5 destroyed.
+Oct 28 08:00:04.135 GENERAL: reset done.

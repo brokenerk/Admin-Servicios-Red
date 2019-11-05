@@ -660,37 +660,6 @@
                     }
                 ],
                 "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "3763f8a9-f769-48ee-ac59-c5b98556cbc1",
-                "nodes": [
-                    {
-                        "adapter_number": 1,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f1/0",
-                            "x": 35,
-                            "y": 61
-                        },
-                        "node_id": "31259a86-6a49-4cce-ad9a-b04b07a269e3",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 30,
-                            "y": -10
-                        },
-                        "node_id": "6e601577-2e6c-4b2c-bf15-8d6601398631",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
             }
         ],
         "nodes": [
@@ -1444,45 +1413,6 @@
                 "width": 72,
                 "x": 112,
                 "y": -182,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": "none",
-                "custom_adapters": [],
-                "first_port_name": "",
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Windows7-1",
-                    "x": -11,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "Windows7-1",
-                "node_id": "6e601577-2e6c-4b2c-bf15-8d6601398631",
-                "node_type": "virtualbox",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
-                    "adapters": 1,
-                    "headless": false,
-                    "linked_clone": false,
-                    "on_close": "power_off",
-                    "ram": 1024,
-                    "usage": "",
-                    "use_any_adapter": false,
-                    "vmname": "Windows 7"
-                },
-                "symbol": ":/symbols/vbox_guest.svg",
-                "template_id": "9149eddd-4486-4440-909a-35496dce28c6",
-                "width": 65,
-                "x": -25,
-                "y": 263,
                 "z": 1
             }
         ]

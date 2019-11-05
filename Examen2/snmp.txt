@@ -2,11 +2,11 @@ snmp-server community ro_4CM1 ro SNMP_ACL
 snmp-server community rw_4CM1 rw SNMP_ACL
 snmp-server location ESCOM_4CM1
 snmp-server contact enriquebroly@hotmail.com
-snmp-server group 4CM1 v3 auth priv read V3Read write V3Write
+snmp-server group 4CM1 v3 priv read V3Read write V3Write
 snmp-server user admin 4CM1 v3 auth sha 12345678 priv des56 12345678
 snmp-server view V3Read iso included
 snmp-server view V3Write iso included
-snmp-server host 20.20.20.26 version 3 auth priv admin
+snmp-server host 20.20.20.26 version 3 priv admin
 snmp-server enable traps
 ip access-list standard SNMP_ACL 
 permit 20.20.20.26

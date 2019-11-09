@@ -88,6 +88,15 @@
                 "x": -260,
                 "y": 134,
                 "z": 2
+            },
+            {
+                "drawing_id": "99a2ca3b-32a7-49d2-943f-a3b0f52d6789",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"24\" width=\"49\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">NETem</text></svg>",
+                "x": 213,
+                "y": -43,
+                "z": 2
             }
         ],
         "links": [
@@ -149,130 +158,6 @@
                         },
                         "node_id": "fcf68815-41fb-4190-9edc-7ed8f153e153",
                         "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "a44bd40f-40da-4ea0-be8a-8a196a317b7e",
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 66,
-                            "y": 8
-                        },
-                        "node_id": "77845722-28cf-4f57-b9ed-ffb46d5ca6af",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e3",
-                            "x": 1,
-                            "y": 37
-                        },
-                        "node_id": "7c5d72b7-a204-4522-92e8-c5463fbcecc8",
-                        "port_number": 3
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "7adcc67b-7a4d-40b1-9af8-2ea23afdd38c",
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f0/1",
-                            "x": 35,
-                            "y": 61
-                        },
-                        "node_id": "cc6c897d-c618-4780-9434-b3dc5dee20e1",
-                        "port_number": 1
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 29,
-                            "y": -10
-                        },
-                        "node_id": "0be14b3f-3123-446c-a16d-480102f73f94",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "0a2b8c06-4306-450e-8069-abe3c41fe3a5",
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f0/1",
-                            "x": 33,
-                            "y": -17
-                        },
-                        "node_id": "fcf68815-41fb-4190-9edc-7ed8f153e153",
-                        "port_number": 1
-                    },
-                    {
-                        "adapter_number": 1,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e1",
-                            "x": 31,
-                            "y": 69
-                        },
-                        "node_id": "0be14b3f-3123-446c-a16d-480102f73f94",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "9c16d0b9-36a7-4fbd-b64d-7d023cde1ff5",
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 68,
-                            "y": 46
-                        },
-                        "node_id": "fe00dafe-26e3-4eda-ab98-0b1c71e8e768",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e2",
-                            "x": 0,
-                            "y": -1
-                        },
-                        "node_id": "7c5d72b7-a204-4522-92e8-c5463fbcecc8",
-                        "port_number": 2
                     }
                 ],
                 "suspend": false
@@ -475,123 +360,6 @@
                 "width": 66,
                 "x": 118,
                 "y": 92,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": "none",
-                "custom_adapters": [],
-                "first_port_name": "",
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Windows7-1",
-                    "x": -11,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "Windows7-1",
-                "node_id": "77845722-28cf-4f57-b9ed-ffb46d5ca6af",
-                "node_type": "virtualbox",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
-                    "adapters": 1,
-                    "headless": false,
-                    "linked_clone": true,
-                    "on_close": "power_off",
-                    "ram": 1024,
-                    "usage": "",
-                    "use_any_adapter": false,
-                    "vmname": "Windows7-1"
-                },
-                "symbol": ":/symbols/vbox_guest.svg",
-                "template_id": "0a8d8752-3075-405a-a36a-5b9b252de3d2",
-                "width": 65,
-                "x": -235,
-                "y": 65,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": "none",
-                "custom_adapters": [],
-                "first_port_name": "",
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "NETem-1",
-                    "x": 1,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "NETem-1",
-                "node_id": "0be14b3f-3123-446c-a16d-480102f73f94",
-                "node_type": "virtualbox",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
-                    "adapters": 2,
-                    "headless": false,
-                    "linked_clone": false,
-                    "on_close": "power_off",
-                    "ram": 512,
-                    "usage": "",
-                    "use_any_adapter": false,
-                    "vmname": "NETem"
-                },
-                "symbol": ":/symbols/vbox_guest.svg",
-                "template_id": "ed766aa8-4040-4722-acd0-0662affb4a6d",
-                "width": 65,
-                "x": 115,
-                "y": -38,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": "none",
-                "custom_adapters": [],
-                "first_port_name": "",
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Observium-1",
-                    "x": -12,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "Observium-1",
-                "node_id": "fe00dafe-26e3-4eda-ab98-0b1c71e8e768",
-                "node_type": "virtualbox",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
-                    "adapters": 1,
-                    "headless": false,
-                    "linked_clone": false,
-                    "on_close": "power_off",
-                    "ram": 512,
-                    "usage": "",
-                    "use_any_adapter": false,
-                    "vmname": "Observium"
-                },
-                "symbol": ":/symbols/vbox_guest.svg",
-                "template_id": "4d625a09-4f76-4488-8623-f982c1322138",
-                "width": 65,
-                "x": -246,
-                "y": -131,
                 "z": 1
             }
         ]

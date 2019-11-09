@@ -49,17 +49,26 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">192.168.1.3/24</text></svg>",
-                "x": -453,
-                "y": 83,
+                "x": -465,
+                "y": 70,
                 "z": 2
             },
             {
-                "drawing_id": "d71b9437-7db3-4e08-9a62-06bde9caca9e",
+                "drawing_id": "98a79784-1326-4964-b24a-9acdb53b5687",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg height=\"40\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">VLAN 1\n192.168.1.2/24</text></svg>",
-                "x": -260,
-                "y": 64,
+                "svg": "<svg height=\"24\" width=\"91\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">AgenteSNMP</text></svg>",
+                "x": 22,
+                "y": 69,
+                "z": 2
+            },
+            {
+                "drawing_id": "88d13f5c-cc7c-4d49-81eb-b5a3d7606ccd",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"24\" width=\"86\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">GestorSNMP</text></svg>",
+                "x": -453,
+                "y": 90,
                 "z": 2
             }
         ],
@@ -97,7 +106,7 @@
             },
             {
                 "filters": {},
-                "link_id": "9e31722a-1f03-4b0c-8917-ab2501ee2951",
+                "link_id": "aaeea3cd-6649-4549-873d-0aff57f10358",
                 "nodes": [
                     {
                         "adapter_number": 0,
@@ -106,9 +115,9 @@
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
                             "x": 75,
-                            "y": 16
+                            "y": 15
                         },
-                        "node_id": "2022890c-4e43-4ac5-bd92-14aeda111394",
+                        "node_id": "425d84a6-12fd-4241-b1d7-7fe82be75c21",
                         "port_number": 0
                     },
                     {
@@ -118,41 +127,10 @@
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f0/0",
                             "x": -6,
-                            "y": 21
+                            "y": 22
                         },
                         "node_id": "796997ab-b236-45a0-a0d8-869e0830ca71",
                         "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "0d121755-ee8a-4c3d-a3d9-5da8e4cb9d28",
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 72,
-                            "y": 28
-                        },
-                        "node_id": "b835594f-0399-4f80-acbc-dbf9dfae282a",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e1",
-                            "x": -4,
-                            "y": 17
-                        },
-                        "node_id": "2022890c-4e43-4ac5-bd92-14aeda111394",
-                        "port_number": 1
                     }
                 ],
                 "suspend": false
@@ -294,7 +272,7 @@
                 },
                 "locked": false,
                 "name": "Switch1",
-                "node_id": "2022890c-4e43-4ac5-bd92-14aeda111394",
+                "node_id": "425d84a6-12fd-4241-b1d7-7fe82be75c21",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -353,47 +331,8 @@
                 "symbol": ":/symbols/ethernet_switch.svg",
                 "template_id": "1966b864-93e7-32d5-965f-001384eec461",
                 "width": 72,
-                "x": -245,
-                "y": 16,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": "none",
-                "custom_adapters": [],
-                "first_port_name": "",
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "WindowsXPx64-1",
-                    "x": -27,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "WindowsXPx64-1",
-                "node_id": "b835594f-0399-4f80-acbc-dbf9dfae282a",
-                "node_type": "virtualbox",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
-                    "adapters": 1,
-                    "headless": false,
-                    "linked_clone": false,
-                    "on_close": "power_off",
-                    "ram": 2048,
-                    "usage": "",
-                    "use_any_adapter": false,
-                    "vmname": "Windows XP x64"
-                },
-                "symbol": ":/symbols/vbox_guest.svg",
-                "template_id": "2ee82fc0-c417-4eb0-9cd6-cbef009bdb8d",
-                "width": 65,
-                "x": -428,
-                "y": 8,
+                "x": -247,
+                "y": 20,
                 "z": 1
             }
         ]

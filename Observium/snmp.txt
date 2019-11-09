@@ -1,0 +1,8 @@
+snmp-server community ro_4CM1 ro SNMP_ACL
+snmp-server community rw_4CM1 rw SNMP_ACL
+snmp-server location LabRedesESCOM
+snmp-server host 192.168.110.20 traps version 2 ro_4CM1
+snmp-server host 192.168.110.20 traps version 2 rw_4CM1
+snmp-server enable traps
+ip access-list standard SNMP_ACL 
+permit 192.168.110.20

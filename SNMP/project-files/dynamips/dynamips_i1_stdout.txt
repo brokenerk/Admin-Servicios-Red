@@ -6,3 +6,5 @@ cygwin warning:
     http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
 VM: Unable to store instance 'Ghost' in registry!
 VM Ghost: unable to create instance!
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!

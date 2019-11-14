@@ -1,8 +1,24 @@
+SNMP:
 snmp-server community ro_4CM1 ro SNMP_ACL
-snmp-server community rw_4CM1 rw SNMP_ACL
 snmp-server location LabRedesESCOM
-snmp-server host 192.168.110.20 traps version 2 ro_4CM1
-snmp-server host 192.168.110.20 traps version 2 rw_4CM1
+snmp-server host 192.168.110.10 version 2c ro_4CM1
+snmp-server host 192.168.110.20 version 2c ro_4CM1
 snmp-server enable traps
 ip access-list standard SNMP_ACL 
 permit 192.168.110.20
+permit 192.168.110.10
+
+Agregar dispositivos:
+https://192.168.110.10:12320
+cd /etc/
+nano hosts
+192.168.110.1 R1
+192.168.110.2 R2
+192.168.110.20 NavegadorWeb
+
+cd /opt/observium
+./add_device.php R1 ro_4CM1 v2c 161 udp
+./add_device.php R2 ro_4CM1 v2c 161 udp
+./add_device.php NavegadorWeb ro_4CM1 v2c 161 udp
+
+Configurar alertas:

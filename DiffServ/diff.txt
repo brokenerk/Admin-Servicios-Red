@@ -1,0 +1,79 @@
+R1:
+router ospf 1
+network 10.10.1.0 0.0.0.255 area 1
+network 10.10.13.0 0.0.0.3 area 0
+
+R2:
+router ospf 1
+network 10.10.2.0 0.0.0.255 area 2
+network 10.10.23.0 0.0.0.3 area 0
+
+R3:
+router ospf 1
+network 10.10.3.0 0.0.0.255 area 3
+network 10.10.13.0 0.0.0.3 area 0
+network 10.10.23.0 0.0.0.3 area 0
+
+class-map match-all OSPF
+match protocol ospf
+exit
+class-map match-all MATCH_HTTP
+match access-group 105
+exit
+class-map match-all ICMP_TO_CORE
+match precedence 1
+exit
+class-map match-all HTTP_TO_CORE
+match precedence 3
+exit
+class-map match-all MATCH_ICMP
+match access-group 101
+exit
+
+policy-map FROM_HOST
+class MATCH_ICMP
+set precedence 1
+exit
+class MATCH_HTTP
+set precedence 3
+exit
+exit
+policy-map TO_CORE
+class ICMP_TO_CORE
+bandwidth 8
+police cir 8000
+conform-action transmit
+exceed-action drop
+exit
+class HTTP_TO_CORE
+bandwidth 10000
+exit
+class OSPF
+set precedence 7
+priority 1000
+exit
+exit
+
+access-list 101 permit icmp any any
+access-list 101 remark "match icmp"
+access-list 105 remark "match http"
+access-list 105 permit tcp any any eq www
+
+R1 - R2:
+int fa0/0
+service-policy input FROM_HOST
+exit
+int fa2/0
+service-policy output TO_CORE
+exit
+
+R3:
+int fa0/0
+service-policy input FROM_HOST
+exit
+int fa1/0
+service-policy output TO_CORE
+exit
+int fa2/0
+service-policy output TO_CORE
+exit
